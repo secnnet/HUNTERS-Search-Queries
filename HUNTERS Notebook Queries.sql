@@ -1,6 +1,6 @@
 ---Alter Time zone
 ALTER SESSION SET TIMEZONE = 'UTC';
-
+---------------------------------------------------------------------------------------------------------
 --Office365 Audit Logs
 SELECT User_ID, CLIENT_IP, OPERATION, EVENT_TIME
 FROM ICON_EU_DB.RAW.O365_AUDIT_LOGS
@@ -16,3 +16,18 @@ ORDER BY EVENT_TIME DESC;
 --The EVENT_TIME is within the last 24 hours (using the DATEADD function to subtract 24 hours from the current date and time, and comparing with the EVENT_TIME column)
 
 --The results are sorted in descending order by the EVENT_TIME column. In summary, this query retrieves information about users who have logged in to the O365 platform within the last 24 hours using an iconplc.com email address.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
