@@ -25,11 +25,8 @@ WHERE URL LIKE '%google.com%'
 ORDER BY EVENT_TIME DESC;
  
 --This query retrieves data from the "ZSCALER_ZIA" table in the "RAW" schema of the "ICON_EU_DB" database. The data that is returned is filtered based on two conditions:
-
 --The URL column must contain the string "google.com" anywhere in the column value. The '%' symbol is a wildcard character that allows for any characters to be present before or after "google.com".
-
 --The EVENT_TIME column must be between April 1st, 2023 at 12:00:00 AM UTC and April 7th, 2023 at 12:00:00 AM UTC.
-
 --The results of the query are sorted in descending order based on the EVENT_TIME column. The '*' symbol in the SELECT statement means that all columns from the ZSCALER_ZIA table will be returned.
 
 
