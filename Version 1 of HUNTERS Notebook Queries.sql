@@ -4,12 +4,14 @@ ALTER SESSION SET TIMEZONE = 'UTC';
 --Leads Status History 
 SELECT *
 FROM ICON_EU_DB.INVESTIGATION.LEADS_CLASSIFICATIONS
+Limit 10
 --The query selects all columns and rows from the LEADS_CLASSIFICATIONS table in the INVESTIGATION schema, which is located in the ICON_EU_DB database.
 --In other words, it retrieves all data from the LEADS_CLASSIFICATIONS table in the INVESTIGATION schema. The result will include all columns and all rows of data in the table.
 
 --Leads Status History 
 SELECT *
 FROM ICON_EU_DB.RAW.ZSCALER_ZIA
+Limit 10
 --The AQL query SELECT * FROM ICON_EU_DB.RAW.ZSCALER_ZIA retrieves all the data from the ZSCALER_ZIA table in the RAW schema of the ICON_EU_DB database.
 --In other words, it selects all columns and rows from the ZSCALER_ZIA table. This query is useful when you want to analyze or manipulate the entire dataset stored in the ZSCALER_ZIA table.
 ---------------------------------------------------------------------------------------------------------
@@ -49,6 +51,7 @@ FROM ICON_EU_DB.RAW.ZSCALER_ZIA
 WHERE ACTION = 'Blocked'
   AND URL_CLASS = 'Advanced Security Risk'
   AND EVENT_TIME BETWEEN '2022-04-21 09:25:36' AND '2022-06-21 09:45:36'
+Limit 10
 --This query selects distinct values of URL_CATEGORY, URL_CLASS, and ACTION from the ZSCALER_ZIA table in the ICON_EU_DB database. The query filters the results to only include events where the ACTION is 'Blocked', the URL_CLASS is 'Advanced Security Risk', and the EVENT_TIME is between '2022-04-21 09:25:36' and '2022-06-21 09:45:36'.
 
 
