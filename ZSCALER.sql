@@ -7,3 +7,28 @@
 SELECT *
 FROM ICON_EU_DB.RAW.ZSCALER_ZIA
 LIMIT 10
+
+---------------------------------------------------------------------------------------------------------
+
+--This is a SQL query that selects data from a database table named "ZSCALER_ZIA" in a schema called "ICON_EU_DB.RAW". The query retrieves data that meet certain conditions and limits the result set to a maximum of 10 rows. Here is the cleaned and commented version of the code:
+
+-- Select all columns from the table "ZSCALER_ZIA" in the schema "ICON_EU_DB.RAW"
+SELECT * 
+
+-- Filter the results to only include rows where the "HOSTNAME" column ends with ".co.uk"
+FROM ICON_EU_DB.RAW.ZSCALER_ZIA
+WHERE HOSTNAME LIKE '%.co.uk'
+
+-- Further filter the results to only include rows where the "ACTION" column is "Allowed"
+  AND ACTION = 'Allowed'
+
+-- Further filter the results to only include rows where the "USER" column contains "@iconplc.com"
+  AND USER LIKE '%@iconplc.com%'
+
+-- Further filter the results to only include rows where the "EVENT_TIME" column falls between two dates
+  AND EVENT_TIME BETWEEN '2023-04-13 00:00:00' AND '2023-04-15 00:00:00'
+
+-- Limit the result set to a maximum of 10 rows
+LIMIT 10
+
+--This query is useful for retrieving specific data from a large table based on multiple conditions. The use of the "LIKE" operator allows for flexible matching of partial strings, while the "BETWEEN" operator allows for filtering based on a range of dates. The "LIMIT" clause ensures that the query does not return too much data, which can be especially important when dealing with large tables.
