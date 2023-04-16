@@ -26,7 +26,7 @@ Limit 10
 
 ---------------------------------------------------------------------------------------------------------
 
---This query retrieves the top 10 external IPs with the highest count of DNS queries that were blocked by Cisco Umbrella, from the ICON_EU_DB.RAW.CISCO_UMBRELLA_DNS_LOGS table.
+--Top denied external IP addresses: 
 
 -- This query selects the external IP and count of DNS queries that were blocked by Cisco Umbrella
 SELECT EXTERNAL_IP, COUNT(*) AS count
@@ -45,6 +45,8 @@ ORDER BY count DESC
 
 -- This limits the results to the top 10 entries
 LIMIT 10;
+
+--This query retrieves the top 10 external IPs with the highest count of DNS queries that were blocked by Cisco Umbrella, from the ICON_EU_DB.RAW.CISCO_UMBRELLA_DNS_LOGS table.
 
 
 

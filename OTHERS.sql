@@ -9,7 +9,7 @@ ALTER SESSION SET TIMEZONE = 'UTC';
 
 ---------------------------------------------------------------------------------------------------------
 
---Source Lag Time
+--Source Lag Time:
 SELECT 
     MAX(EVENT_TIME) AS max_event_time, -- select the maximum value of the EVENT_TIME column and rename it as max_event_time
     CURRENT_TIMESTAMP AS current_time, -- get the current timestamp and rename it as current_time
