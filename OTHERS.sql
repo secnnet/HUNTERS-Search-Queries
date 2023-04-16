@@ -1,4 +1,4 @@
----Alter Time Zone
+---Alter Time Zone:
 ALTER SESSION SET TIMEZONE = 'UTC';
 
 --The AQL command "ALTER SESSION SET TIMEZONE = 'UTC';" is setting the timezone of the current session to UTC (Coordinated Universal Time).
