@@ -22,8 +22,8 @@ WHERE HOSTNAME LIKE '%.co.uk'
 -- Further filter the results to only include rows where the "ACTION" column is "Allowed"
   AND ACTION = 'Allowed'
 
--- Further filter the results to only include rows where the "USER" column contains "@iconplc.com"
-  AND USER LIKE '%@iconplc.com%'
+-- Further filter the results to only include rows where the "USER" column contains "@email.com"
+  AND USER LIKE '%@email.com%'
 
 -- Further filter the results to only include rows where the "EVENT_TIME" column falls between two dates
   AND EVENT_TIME BETWEEN '2023-04-13 00:00:00' AND '2023-04-15 00:00:00'
