@@ -1,22 +1,22 @@
---The given query is using the SQL (Structured Query Language) to retrieve data from a database table called "ZSCALER_ZIA" that belongs to the "ICON_EU_DB.RAW" schema. The "*" in the "SELECT" statement means that all columns of the table will be retrieved.
+--The given query is using the SQL (Structured Query Language) to retrieve data from a database table called "ZSCALER_ZIA" that belongs to the "SECNNET_ASIA_JAPAN.RAW" schema. The "*" in the "SELECT" statement means that all columns of the table will be retrieved.
 
 --The "LIMIT 10" clause limits the number of rows returned by the query to 10. This is useful when the table contains a large number of rows and the user wants to quickly preview the first few rows of the result set.
 
---In summary, this query is retrieving the first 10 rows of data from the "ZSCALER_ZIA" table in the "ICON_EU_DB.RAW" schema, and returning all columns of those 10 rows.
+--In summary, this query is retrieving the first 10 rows of data from the "ZSCALER_ZIA" table in the "SECNNET_ASIA_JAPAN.RAW" schema, and returning all columns of those 10 rows.
 
 SELECT *
-FROM ICON_EU_DB.RAW.ZSCALER_ZIA
+FROM SECNNET_ASIA_JAPAN.RAW.ZSCALER_ZIA
 LIMIT 10
 
 ---------------------------------------------------------------------------------------------------------
 
---This is a SQL query that selects data from a database table named "ZSCALER_ZIA" in a schema called "ICON_EU_DB.RAW". The query retrieves data that meet certain conditions and limits the result set to a maximum of 10 rows. Here is the cleaned and commented version of the code:
+--This is a SQL query that selects data from a database table named "ZSCALER_ZIA" in a schema called "SECNNET_ASIA_JAPAN.RAW". The query retrieves data that meet certain conditions and limits the result set to a maximum of 10 rows. Here is the cleaned and commented version of the code:
 
--- Select all columns from the table "ZSCALER_ZIA" in the schema "ICON_EU_DB.RAW"
+-- Select all columns from the table "ZSCALER_ZIA" in the schema "SECNNET_ASIA_JAPAN.RAW"
 SELECT * 
 
 -- Filter the results to only include rows where the "HOSTNAME" column ends with ".co.uk"
-FROM ICON_EU_DB.RAW.ZSCALER_ZIA
+FROM SECNNET_ASIA_JAPAN.RAW.ZSCALER_ZIA
 WHERE HOSTNAME LIKE '%.co.uk'
 
 -- Further filter the results to only include rows where the "ACTION" column is "Allowed"
