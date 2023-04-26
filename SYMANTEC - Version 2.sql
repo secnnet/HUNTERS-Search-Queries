@@ -1,0 +1,26 @@
+-- This SQL query selects the first 10 rows of the SYMANTEC_DLP_LOGS table in the SECNNET_ASIA_JAPAN database.
+SELECT *
+FROM SECNNET_ASIA_JAPAN.RAW.SYMANTEC_DLP_LOGS
+LIMIT 10;
+
+-- This SQL query selects the first 10 rows of the SYMANTEC_ENDPOINT_PROTECTION_IDS_EVENTS table in the SECNNET_ASIA_JAPAN database.
+SELECT *
+FROM SECNNET_ASIA_JAPAN.RAW.SYMANTEC_ENDPOINT_PROTECTION_IDS_EVENTS
+LIMIT 10;
+
+-- This SQL query selects the first 10 rows of the SYMANTEC_ENDPOINT_PROTECTION_RISK_EVENTS table in the SECNNET_ASIA_JAPAN database.
+SELECT *
+FROM SECNNET_ASIA_JAPAN.RAW.SYMANTEC_ENDPOINT_PROTECTION_RISK_EVENTS
+LIMIT 10;
+
+-- This SQL query selects the first 10 rows of the SYMANTEC_ENDPOINT_PROTECTION_SCANS table in the SECNNET_ASIA_JAPAN database.
+SELECT *
+FROM SECNNET_ASIA_JAPAN.RAW.SYMANTEC_ENDPOINT_PROTECTION_SCANS
+LIMIT 10;
+
+-- This SQL query selects the first 10 rows of the SYMANTEC_ENDPOINT_PROTECTION_SONAR_RAW table in the SECNNET_ASIA_JAPAN database.
+SELECT *
+FROM SECNNET_ASIA_JAPAN.RAW.SYMANTEC_ENDPOINT_PROTECTION_SONAR_RAW
+LIMIT 10;
+
+---------------------------------------------------------------------------------------------------------
