@@ -1,3 +1,5 @@
+# HUNTERS Search Queries
+
 Hello,
 
 I hope this message finds you well. I am pleased to inform you that I have recently uploaded a comprehensive set of AQL queries containing a variety of Hunter search queries specifically tailored for security purposes.
